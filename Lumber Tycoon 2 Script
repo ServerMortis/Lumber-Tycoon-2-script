@@ -1,0 +1,114 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Welcome in my script! by ServerMortis", "All")
+
+local Mainw = Library.CreateLib("Lumber Tycoon 2 by ServerMortis", "Sentinel")
+local tabm = Mainw:NewTab("Main")
+local tabf = Mainw:NewTab("Fan")
+local tabb = Mainw:NewTab("Base")
+local tabs = Mainw:NewTab("Shop")
+
+
+--Main
+local sectm = tabm:NewSection("Main")
+local sectf = tabf:NewSection("Fan")
+local sectb = tabb:NewSection("Base")
+local sects = tabs:NewSection("Shop")
+sectm:NewButton("Teleport for Neon Wood", "Teleport you for neon wood", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3645.84082, -166.200012, 406.670349, 0.00388982287, -4.76246056e-11, 0.99999243, -3.06933978e-10, 1, 4.88188934e-11, -0.99999243, -3.0712155e-10, 0.00388982287)
+end)
+
+sectm:NewButton("Teleport for Gold Wood", "Teleport you for gold wood", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1123.95398, -5.89978075, -1031.87561, -0.894732535, 1.86510949e-08, -0.446602404, 1.07468878e-08, 1, 2.0231651e-08, 0.446602404, 1.33023308e-08, -0.894732535)
+end)
+
+sectm:NewButton("Teleport you in center", "Teleport you in center", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(196.624634, 2.99999928, 59.2046432, 0.00246640388, -4.75276565e-08, -0.99999696, 6.39786168e-10, 1, -4.75262247e-08, 0.99999696, -5.2256538e-10, 0.00246640388)
+end)
+
+sectm:NewButton("for Dupe", "Teleport you for up", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2059.41406, 512.001526, 1013.46204, -0.236779824, 2.56169788e-08, 0.971563339, -1.80806481e-09, 1, -2.68074043e-08, -0.971563339, -8.10410228e-09, -0.236779824)
+end)
+
+sectm:NewButton("Teleport you for phantom", "Teleport you for phantom", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7.57359505, -213.100174, -1343.14709, 0.195088401, 6.4088479e-10, 0.980785668, 6.54399628e-08, 1, -1.36701255e-08, -0.980785668, 6.68494593e-08, 0.195088401)
+end)
+
+sectm:NewKeybind("KeyBind", "KeyBind for close\open gui", Enum.KeyCode.X, function()
+	Library:ToggleUI()
+end)
+
+--Fan
+sectf:NewButton("Sit", "Sit", function()
+    game.Players.LocalPlayer.Character.Humanoid.Sit = true
+end)
+
+sectf:NewButton("AutoRotate Off", "AutoRotate Off", function()
+    game.Players.LocalPlayer.Character.Humanoid.AutoRotate = false
+end)
+
+sectf:NewButton("AutoRotate On", "AutoRotate On", function()
+    game.Players.LocalPlayer.Character.Humanoid.AutoRotate = true
+end)
+
+--Base
+sectb:NewButton("Base 1", "Tp you in base 1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(415.612427, 8.73884392, 397.840027, 0.0299327336, -0.0564200208, -0.997958302, -7.90362176e-09, 0.998405695, -0.0564453118, 0.999551892, 0.00168957037, 0.0298850108)
+end)
+
+sectb:NewButton("Base 2", "Tp you in base 2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(710.838562, 25.9842587, 390.146118, -0.0602940172, -0.0700107068, 0.995722413, 9.32115896e-09, 0.997537255, 0.0701383129, -0.998180687, 0.00422892999, -0.0601455308)
+end)
+
+sectb:NewButton("Base 3", "Tp you in base 3", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(714.753601, 14.7207127, 90.9601517, 0.519800782, 0.0448432826, 0.853109717, -7.72114905e-09, 0.998621345, -0.0524920225, -0.854287505, 0.0272853877, 0.519084156)
+end)
+
+sectb:NewButton("Base 4", "Tp you in base 4", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(656.760986, 13.4522543, -249.626556, 0.0662951916, 0.0917592049, 0.993571937, 7.33032701e-09, 0.995762587, -0.0919615179, -0.997800052, 0.00609661359, 0.0660142675)
+end)
+
+sectb:NewButton("Base 5", "Tp you in base 5", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(385.604584, 20.9402122, -248.814911, 0.600713074, -0.171860844, 0.780773759, -3.69076214e-10, 0.976620674, 0.214969903, -0.799464703, -0.129135221, 0.586668789)
+end)
+
+sectb:NewButton("Base 6", "Tp you in base 6", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(274.435394, 16.1985722, -510.065094, -0.234782919, -0.11032252, 0.965767026, -1.4124014e-08, 0.993538558, 0.113494948, -0.972047806, 0.0266466606, -0.233265877)
+end)
+
+sectb:NewButton("Base 7", "Tp you in base 7", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(66.2520294, 24.2189236, -201.437378, -0.956200421, 0.177630618, -0.232654452, 4.2640651e-09, 0.794821799, 0.606842875, 0.292712718, 0.580263436, -0.760008991)
+end)
+
+sectb:NewButton("Base 8", "Tp you in base 8", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-237.700241, 35.3224144, 200.847305, -0.707460046, -0.116224065, 0.697131455, 8.30338198e-09, 0.986385763, 0.164447859, -0.706753314, 0.116340294, -0.697828531)
+end)
+
+sectb:NewButton("Base 9", "Tp you in base 9", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-62.372776, 42.5882568, 524.564209, -0.878712893, 0.456417859, -0.139808461, 3.29501546e-08, 0.292884231, 0.956147909, 0.477350682, 0.840179503, -0.257361174)
+end)
+
+--Shop
+sects:NewButton("Tp you in Wood Rus", "Tp you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(253.259109, 2.99999928, 57.6932335, -0.0148111749, -7.39539345e-08, -0.999890327, -3.99434796e-08, 1, -7.33703729e-08, 0.999890327, 3.88523951e-08, -0.0148111749)
+end)
+
+sects:NewButton("Tp you in LandStore", "Tp you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(244.834106, 2.99999928, -98.5797272, -0.00953886285, 7.27405194e-08, -0.999954522, 7.22973281e-09, 1, 7.26748581e-08, 0.999954522, -6.5361685e-09, -0.00953886285)
+end)
+
+sects:NewButton("Tp you in Boxed Cars", "Tp you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(509.594299, 2.99999928, -1475.41528, -0.99977082, -1.4830423e-10, -0.0214092396, 1.27708955e-09, 1, -6.65647732e-08, 0.0214092396, -6.65768525e-08, -0.99977082)
+end)
+
+sects:NewButton("Tp you in Fancy Furnishings", "Tp you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(491.748016, 2.99999928, -1704.51953, 0.999424696, -3.84411045e-08, 0.0339152813, 3.77643197e-08, 1, 2.05957722e-08, -0.0339152813, -1.93031369e-08, 0.999424696)
+end)
+
+sects:NewButton("Tp you in TNT shop", "Tp you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(249.572113, 8.40083504, -2539.37646, 0.241365284, 7.5240969e-08, -0.970434308, -7.01244716e-08, 1, 6.00920131e-08, 0.970434308, 5.35470726e-08, 0.241365284)
+end)
+
+sects:NewButton("Tp you in Link's Logic", "Tp you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4609.09521, 7.0008235, -765.733826, 0.999724209, -7.33926253e-09, -0.0234832224, 8.35748626e-09, 1, 4.32614797e-08, 0.0234832224, -4.34458123e-08, 0.999724209)
+end)
